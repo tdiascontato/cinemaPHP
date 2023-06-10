@@ -1,0 +1,186 @@
+/*Navbar*/
+.navbar-brand {
+    position: relative;
+  }
+#logo {
+  position: absolute;
+  width: 50px;
+  left: 155px;
+  bottom: -20px;
+}
+#moviestar-title {
+    color: #FFF;
+    position: absolute;
+    bottom: -15px;
+    font-size: 30px;
+    left: 5px;
+    font-weight: bold;
+}
+#main-navbar {
+    background-color: #7a6e4c;
+}
+#search-form {
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 250px;
+}
+#search-form .form-control {
+    border: none;
+    width: 90%;
+    box-shadow: none;
+}
+#navbar {
+    min-width: 30%;
+} 
+.navbar-nav {
+    justify-content: flex-end;
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #000000;
+    transition: .5s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #e8d08e;;
+}
+.bold {
+    font-weight: bold;
+}
+.msg-container {
+  background-color: #e8d08e;
+  padding: 15px;
+}
+.msg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 1px #000000;
+  text-align: center;
+}
+.msg.error {
+  color: #000000;
+  background-color: #F8D7DA;
+  border-color: #F5C2C7;
+}
+.msg.success {
+  color: #fff;
+  background-color: #97b887;
+  border-color: rgb(100, 117, 110);
+}
+
+/*home*/
+#main-container {
+    background-color: #e8d08e;
+    color: #fff;
+    min-height: 65vh;
+    padding: 40px;
+}
+/* Login e Registrar */
+#auth-row {
+  justify-content: space-evenly;
+}
+#login-container h2,
+#register-container h2 {
+  text-align: center;
+  border-bottom: 2px solid #570404;
+  color:#4e4631;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+#login-container form,
+#register-container form {
+  max-width: 400px;
+  margin: 30px auto;
+}
+.card-btn {
+  color: #fff;
+  background-color: #570404;
+  border: 2px solid #570404;
+  width: 100%;
+}
+.card-btn:hover {
+  background-color: transparent;
+  color: #570404;
+  border-color: #570404;
+}
+/* Edit Sector */
+#profile-image-container,
+.profile-image-container {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 15px auto;
+}
+.profile-image-container {
+  width: 70px;
+  height: 70px;
+}
+.page-description {
+  color: #000000;
+}
+#bio {
+  max-width: 400px;
+}
+.form-control.disabled {
+  background-color: #BBB;
+}
+#change-password-container {
+  margin-top: 30px;
+}
+.card-btn{
+  margin-top: 30px;
+}
+.edit-profile-page .card-btn,
+#add-movie-container .card-btn,
+#review-form .card-btn,
+#edit-movie-form .card-btn {
+  width: auto;
+}
+/*Footer*/
+#footer {
+    background-color: #433d2b;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+#social-container ul,
+#footer-links-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+#social-container li,
+#footer-links-container li {
+  display: inline-block;
+  margin: 0 20px;
+}
+#social-container li {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    transition: .5s;
+    line-height: 3;
+}
+  
+#social-container li:hover {
+    background-color: #333;
+}
+#social-container a,
+#footer-links-container a {
+  color: #FFF;
+  transition: .5s;
+}
+
+#social-container li i {
+  font-size: 25px;
+}
+
+#footer-links-container {
+  margin: 30px 0;
+}
