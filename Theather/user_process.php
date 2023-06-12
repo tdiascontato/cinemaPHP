@@ -28,14 +28,15 @@
     $userData->bio = $bio;
 
     // Upload da imagem
-    /*if(isset($_FILES["image"]) && !empty($_FILES["image"]["tmp_name"])) {
+    
+    if(isset($_FILES["image"]) && !empty($_FILES["image"]["tmp_name"])) {
       $image = $_FILES["image"];
       $imageTypes = ["image/jpeg", "image/jpg", "image/png"];
       $jpgArray = ["image/jpeg", "image/jpg"];
       // Checagem de tipo de imagem
       if(in_array($image["type"], $imageTypes)) {
         // Checar se jpg
-        if(in_array($image, $jpgArray)) {
+        if(in_array($image["type"], $jpgArray)) {
           $imageFile = imagecreatefromjpeg($image["tmp_name"]);
         // Imagem é png
         } else {
@@ -45,10 +46,11 @@
         imagejpeg($imageFile, "./img/users/" . $imageName, 100);
         $userData->image = $imageName;
       } else {
-        $message->setMessage("Tipo inválido de imagem, insira png ou jpg!", "error", "back");
+        $message->setMessage("Tipo válidos somente em png ou jpg!", "error", "back");
       }
-    }*/
+    }
     $userDao->update($userData);
+
   // Atualizar senha do usuário
   } else if($type === "changepassword") {
     // Receber dados do post

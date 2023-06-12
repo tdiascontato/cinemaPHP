@@ -14,11 +14,11 @@
 
 ?>
   <div id="main-container" class="container-fluid edit-profile-page">
-    <div class="col-md-12">
+    <div class="offset-md-4 col-md-4">
       <form action="<?= $BASE_URL ?>user_process.php" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="type" value="update">
         <div class="row">
-            <div class="col-md-4">
+            <div>
                 <h1><?= $fullName ?></h1>
                 <p class="page-description">Altere seus dados no formulário abaixo:</p>
                 <div class="form-group">
@@ -32,7 +32,7 @@
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input type="text" readonly class="form-control disabled" id="email" name="email" placeholder="Digite o seu nome" value="<?= $userData->email ?>">
-                <div class="col-md-4">
+                <div>
                     <div id="profile-image-container" style="background-image: url('<?= $BASE_URL ?>img/users/<?= $userData->image ?>')"></div>
                         <div class="form-group">
                             <label for="image">Foto:</label>
@@ -50,7 +50,7 @@
       </form>
       <!--Mudança de senha-->
       <div class="row" id="change-password-container">
-        <div class="col-md-4">
+        <div>
           <h2>Alterar a senha:</h2>
           <p class="page-description">Digite e confirme a nova senha:</p>
           <form action="<?= $BASE_URL ?>user_process.php" method="POST">
